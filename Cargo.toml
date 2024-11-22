@@ -1,0 +1,18 @@
+[package]
+name = "aleph_web_translator"
+version = "0.1.0"
+edition = "2021"
+license-file="LICENSE"
+repository="https://github.com/aleph-lang/aleph_web_translator"
+description="Web server implementation of aleph_ollama."
+
+
+[dependencies]
+actix-web = "4.0"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+log = "0.4"
+env_logger = "0.9"
+reqwest = { version = "0.11", features = ["json"] }
+thiserror = "1.0"
+aleph_ollama = "0.1.4"
